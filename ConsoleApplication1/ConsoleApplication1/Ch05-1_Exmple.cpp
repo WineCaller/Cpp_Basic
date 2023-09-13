@@ -1,21 +1,21 @@
-ï»¿#include "io.h"
+#include "io.h"
 
 void CountNumber()
 {
     int Counter = 0;
-    cout << "ìˆ«ì ê°œìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+    cout << "¼ıÀÚ °³¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
     cin >> Counter;
 
-    int Number[Counter];
+    int Number[100];
 
     for (int i = 0; i < Counter; i++)
     {
-        cout << "ìˆ˜ ë°ì´í„°ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+        cout << "¼ö µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
         cin >> Number[i];
     }
 
     int FindNmber;
-    cout << "ì°¾ê³  ì‹¶ì€ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ";
+    cout << "Ã£°í ½ÍÀº ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ";
     cin >> FindNmber;
 
     int FindCount = 0;
@@ -27,23 +27,23 @@ void CountNumber()
         }
     }
 
-    cout << "ì°¾ëŠ” ìˆ˜ì˜ ê°œìˆ˜ëŠ”" << FindCount << "ê°œ ì…ë‹ˆë‹¤." << endl;
+    cout << "Ã£´Â ¼öÀÇ °³¼ö´Â" << FindCount << "°³ ÀÔ´Ï´Ù." << endl;
 }
 
 void LessNnumber()
 {
     int Counter;
-    cout << "ìˆ«ì ê°œìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+    cout << "¼ıÀÚ °³¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
     cin >> Counter;
 
     int FindNmber;
-    cout << "ê¸°ì¤€ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ";
+    cout << "±âÁØ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ";
     cin >> FindNmber;
 
-    int Number[Counter];
+    int Number[100];
     for (int i = 0; i < Counter; i++)
     {
-        cout << "ìˆ˜ ë°ì´í„°ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+        cout << "¼ö µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
         cin >> Number[i];
     }
     for (int i = 0; i < Counter; i++)
@@ -56,37 +56,37 @@ void LessNnumber()
 
 void NotSubmitted()
 {
-    int Student;
-    cout << "ì „ì²´ í•™ìƒì˜ ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+    int Student = 0;
+    cout << "ÀüÃ¼ ÇĞ»ıÀÇ ¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
     cin >> Student;
 
     int Missing;
-    cout << "ë¯¸ì œì¶œ í•™ìƒ ìˆ˜ : ";
+    cout << "¹ÌÁ¦Ãâ ÇĞ»ı ¼ö : ";
     cin >> Missing;
 
-    // ì „ì²´ í•™ìƒì˜ ë²ˆí˜¸ ë°ì´í„° set
-    int TotalStudent[Student];
+    // ÀüÃ¼ ÇĞ»ıÀÇ ¹øÈ£ µ¥ÀÌÅÍ set
+    int TotalStudent[100];
     for (int i = 0; i < Student; i++)
     {
         TotalStudent[i] = i + 1;
     }
 
-    //ê³¼ì œ ì œì¶œí•œ í•™ìƒ ë²ˆí˜¸ set
-    int SubmittedStudent[Student - Missing];
+    //°úÁ¦ Á¦ÃâÇÑ ÇĞ»ı ¹øÈ£ set
+    int SubmittedStudent[100];
     for (int i = 0; i < (Student - Missing); i++)
     {
-        cout << "ì œì¶œí•œ í•™ìƒ ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”." << endl;
+        cout << "Á¦ÃâÇÑ ÇĞ»ı ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä." << endl;
         cin >> SubmittedStudent[i];
     }
 
-    // ì œì¶œ í™•ì¸ìš© ë°°ì—´ ë³€ìˆ˜ Set
-    bool Check[Student];
+    // Á¦Ãâ È®ÀÎ¿ë ¹è¿­ º¯¼ö Set
+    bool Check[100];
     for (int i = 0; i < Student; i++)
     {
         Check[i] = false;
     }
 
-    // ì œì¶œí•œ í•™ìƒ, ë¯¸ì œì¶œ í•™ìƒ êµ¬ë¶„ - true/false
+    // Á¦ÃâÇÑ ÇĞ»ı, ¹ÌÁ¦Ãâ ÇĞ»ı ±¸ºĞ - true/false
     for (int i = 0; i < Student - Missing; i++)
     {
         for (int j = 0; j < Student; j++)
@@ -98,26 +98,26 @@ void NotSubmitted()
         }
     }
 
-    // ë¯¸ì œì¶œ í•™ìƒ ë²ˆí˜¸ ì¶”ì¶œ
+    // ¹ÌÁ¦Ãâ ÇĞ»ı ¹øÈ£ ÃßÃâ
     for (int i = 0; i < Student; i++)
     {
         if (Check[i] == false)
         {
-            cout << i + 1 << "ë²ˆ ë¯¸ì œì¶œ" << endl;
+            cout << i + 1 << "¹ø ¹ÌÁ¦Ãâ" << endl;
         }
     }
 }
 
 void MinMax()
 {
-    int Number;
-    cout << "ìˆ«ì ê°œìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+    int Number = 0;
+    cout << "¼ıÀÚ °³¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
     cin >> Number;
 
-    int ArbitraryNumber[Number];
+    int ArbitraryNumber[100];
     for (int i = 0; i < Number; i++)
     {
-        cout << "ìˆ˜ ë°ì´í„°ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ";
+        cout << "¼ö µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
         cin >> ArbitraryNumber[i];
     }
 
@@ -127,15 +127,13 @@ void MinMax()
     {
         for (int j = 0; j < i; j++) 
         {
-            // ë¹„êµ 
             if (ArbitraryNumber[j] > ArbitraryNumber[j + 1])
             {
-                // êµí™˜(swap)
                 temp = ArbitraryNumber[j];
                 ArbitraryNumber[j] = ArbitraryNumber[j + 1];
                 ArbitraryNumber[j + 1] = temp;
             }
         }
     }
-    cout << ArbitraryNumber[0] << " : " << ArbitraryNumber[Number - 1];
+    cout << ArbitraryNumber[1] << "  " << ArbitraryNumber[Number];
 }

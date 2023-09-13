@@ -132,8 +132,10 @@
     <ClCompile Include="Ch03_Statment.cpp" />
     <ClCompile Include="Ch04-1_Exmple.cpp" />
     <ClCompile Include="Ch04-2_Exmple.cpp" />
+    <ClCompile Include="Ch05-1_Exmple.cpp" />
     <ClCompile Include="Ch05-2_Sort.cpp" />
     <ClCompile Include="Ch05_Array.cpp" />
+    <ClCompile Include="Ch06-1_Exmple.cpp" />
     <ClCompile Include="Ch06_String.cpp" />
     <ClCompile Include="Ch07_Structure.cpp" />
     <ClCompile Include="Cpp_basic.cpp" />

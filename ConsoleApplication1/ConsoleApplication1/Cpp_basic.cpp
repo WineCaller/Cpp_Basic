@@ -5,9 +5,9 @@ int main()
 {
 	cout << "Hello Sesac!\n";
 	
-	SizeComparison();
+	// SizeComparison();
 
-	// MinMax();
+	MinMax();
 
 	cout << endl << "실행 종료" << endl;
 }
