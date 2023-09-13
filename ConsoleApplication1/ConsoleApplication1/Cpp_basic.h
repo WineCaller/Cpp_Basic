@@ -37,3 +37,4 @@ void AlphaNumber();
 void Enum();
 void TwoDimension();
 void MinMax();
+void PinterDefine();

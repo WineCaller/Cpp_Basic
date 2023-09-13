@@ -7,7 +7,9 @@ int main()
 	
 	// SizeComparison();
 
-	MinMax();
+	// MinMax();
+
+	PinterDefine();
 
 	cout << endl << "실행 종료" << endl;
 }
