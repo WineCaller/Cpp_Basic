@@ -6,12 +6,12 @@ void CountNumber()
     cout << "숫자 개수를 입력해주세요 : ";
     cin >> Counter;
 
-    // int Number[Counter];
+    int* pNumber = new int[Counter];
 
     for (int i = 0; i < Counter; i++)
     {
         cout << "수 데이터를 입력해주세요 : ";
-        //cin >> Number[i];
+        cin >> pNumber[i];
     }
 
     int FindNmber;
