@@ -144,6 +144,7 @@
     <ClCompile Include="Cpp_basic.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ch10_Class.h" />
     <ClInclude Include="Cpp_basic.h" />
     <ClInclude Include="io.h" />
   </ItemGroup>
