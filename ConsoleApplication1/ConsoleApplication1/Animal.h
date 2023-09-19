@@ -2,6 +2,7 @@
 
 class Animal
 {
+private:
 	int Leg;
 	int Finger;
 

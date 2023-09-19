@@ -7,7 +7,7 @@ class Car
 	int Velocity;
 
 
-public:
+/*public:
 	Car(int V)
 	{
 		Velocity = V;
@@ -15,4 +15,5 @@ public:
 	void DriveVelocity();
 	void DriveTime();
 
+*/
 };

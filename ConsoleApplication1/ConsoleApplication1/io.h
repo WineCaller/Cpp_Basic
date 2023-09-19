@@ -1,7 +1,3 @@
-#include "io.h"
-#include "Atv.h"
+﻿#include <iostream>
 
-void Atv::PrintPrice()
-{
-
-}
+using namespace std;

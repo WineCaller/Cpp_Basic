@@ -38,3 +38,6 @@ void Enum();
 void TwoDimension();
 void MinMax();
 void PinterDefine();
+void ArrayClass();
+void StringClass();
+void VectorClass();

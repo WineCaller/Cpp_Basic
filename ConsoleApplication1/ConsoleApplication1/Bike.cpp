@@ -2,7 +2,12 @@
 #include "Bike.h"
 
 
-void Bike::PrintTrie()
+void Bike::PrintTire()
 {
-	cout << Price << endl;
+	cout << "Bike : " << Tire << endl;
+}
+
+void Bike::Print()
+{
+	cout << "Bike Class" << endl;
 }
