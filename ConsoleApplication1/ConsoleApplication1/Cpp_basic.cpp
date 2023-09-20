@@ -8,6 +8,10 @@
 #include "Arithmatic.h"
 #include "Atv.h"
 
+#include "Ch14_VirtualParent.h"
+#include "Ch15_PureVirtualChlid.h"
+#include "Ch15_PureVirtualParent.h"
+
 int main()
 {
     std::cout << "Hello World!\n";
@@ -73,6 +77,27 @@ int main()
     VectorClass();
 
     cout << "---------------------------------" << endl;
+
+    /*VirtualParent* Parent = new VirtualParent;
+    VirtualChild* Child = new VirtualChild;
+
+    Parent->PrintClass();
+    Child->PrintClass();
+
+    Parent = Child;
+
+    Parent->PrintClass();*/
+
+    // PureVirtualParent PureParent; => 추상 클래스는 단독으로 객체 생성할 수 없음
+    //PureVirtualChild PureChild;
+    //PureChild.Print();
+    //PureChild.PrintClass();
+
+    //cout << SumN(3, 2) << endl;
+    //cout << SumN(3.324f, 2.645f) << endl;
+    
+    cout << SumTy(10, 50) << endl;
+    cout << SumTy(3.873, 4.629) << endl;
 
     //Mobile().PrintPrice();
 }

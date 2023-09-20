@@ -149,6 +149,11 @@
     <ClCompile Include="Ch11_ArrayClass.cpp" />
     <ClCompile Include="Ch12_StringClass.cpp" />
     <ClCompile Include="Ch13_Vector.cpp" />
+    <ClCompile Include="Ch14_VirtualParent.cpp" />
+    <ClCompile Include="Ch14_VirtualParent.h" />
+    <ClCompile Include="Ch15_PureVirtualChlid.cpp" />
+    <ClCompile Include="Ch15_PureVirtualChlid.h" />
+    <ClCompile Include="Ch16_Template.cpp" />
     <ClCompile Include="Vehicle.cpp" />
     <ClCompile Include="Ch10_Class.cpp" />
     <ClCompile Include="Cpp_basic.cpp" />
@@ -161,6 +166,7 @@
     <ClInclude Include="Ch10_Class.h" />
     <ClInclude Include="Cpp_basic.h" />
     <ClInclude Include="io.h" />
+    <ClInclude Include="Ch15_PureVirtualParent.h" />
     <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <ItemGroup>

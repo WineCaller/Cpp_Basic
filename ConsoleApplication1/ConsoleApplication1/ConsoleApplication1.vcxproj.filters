@@ -90,6 +90,21 @@
     <ClCompile Include="Ch13_Vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ch14_VirtualParent.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch14_VirtualParent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch15_PureVirtualChlid.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch15_PureVirtualChlid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch16_Template.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cpp_basic.h">
@@ -114,6 +129,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Arithmatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch15_PureVirtualParent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

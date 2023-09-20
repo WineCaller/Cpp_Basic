@@ -41,3 +41,14 @@ void PinterDefine();
 void ArrayClass();
 void StringClass();
 void VectorClass();
+void VirtualChild();
+void VirtualParent();
+void PrintClass();
+int SumN(int a, int b);
+float SumN(float a, float b);
+
+template <typename HT>
+HT SumTy(HT a, HT b)
+{
+	return (a + b);
+}
